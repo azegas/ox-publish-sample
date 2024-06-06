@@ -1,0 +1,10 @@
+#+title:      file
+#+date:       [2024-06-06 Thu 07:29]
+#+filetags:   :emacs:
+#+identifier: 20240606T072955
+#+STARTUP:    overview
+
+Hello this is a file.
+
+- Regular org link - [[file:20240606T073028--best-file__economics.org][best file]]
+- Denote link here - [[denote:20240606T073028][best file]]

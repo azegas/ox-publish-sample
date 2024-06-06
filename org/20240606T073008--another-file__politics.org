@@ -1,0 +1,7 @@
+#+title:      another file
+#+date:       [2024-06-06 Thu 07:30]
+#+filetags:   :politics:
+#+identifier: 20240606T073008
+#+STARTUP:    overview
+
+Hello this is another file.

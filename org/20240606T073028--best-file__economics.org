@@ -1,0 +1,7 @@
+#+title:      best file
+#+date:       [2024-06-06 Thu 07:30]
+#+filetags:   :economics:
+#+identifier: 20240606T073028
+#+STARTUP:    overview
+
+Hello this is a best file.
