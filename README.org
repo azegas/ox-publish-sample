@@ -6,22 +6,24 @@ Debugging this issue - https://github.com/protesilaos/denote/issues/369
 
 Sample configuration taken from here - https://orgmode.org/manual/Simple-example.html
 
-1. Clone this repository to /tmp or anywhere else on your system
-2. Check =html= folder, notice that it is empty
-3. Check =org= folder, notice there are 3 .org files in it that were created
+1. Clone this repository to =/tmp= or anywhere else on your system
+2. Create an empty =html= folder in the root directory (alongside =README.org=)
+3. Check =org= folder, notice there are 3 =.org= files in it that were created
    with Denote
 4. Only one file =20240606T072955--file__emacs.org= has a link in it. A regular
    emacs link.
-5. Turn on =*Messages*= buffer alongside
-6. Go to the configuration - =build/build-site.el= and evaluate both code blocks
-7. Finally generate html files by =M-x my-org-publish-org-force=
-8. Check =html= folder once again, you will see 3 html files exported
+5. Turn on =*Messages*= buffer alongside for debugging purposes
+6. Go to the =ox-publish= configuration file - =build/build-site.el= and
+   evaluate both code blocks inside of it
+7. Finally generate =.html= files from =.org= files by =M-x
+   my-org-publish-org-force=
+8. Check =html= folder once again, you will see 3 =html= files exported
 9. Now go back to =20240606T072955--file__emacs.org= file and add a Denote link
    to =best file= by pressing =C-c n i=
 10. Now inside of the =20240606T072955--file__emacs.org= we have two links to
     =20240606T073028--best-file__economics.org=. One regular Emacs link and one
     Denote link
-11. Delete the files in =html= folder
-12. Try to generate html files again by =M-x my-org-publish-org-force=
+11. Delete the files in =html= folder, don't delete the folder itself
+12. Try to generate =html= files again by =M-x my-org-publish-org-force=
 13. Notice =denote-link-ol-export: Wrong type argument: stringp, nil= message
-    in =*Messages*= buffer
+    in =*Messages*= buffer, the export did not succeed because of it
