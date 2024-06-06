@@ -15,11 +15,10 @@ Sample configuration taken from here - https://orgmode.org/manual/Simple-example
 5. Turn on =*Messages*= buffer alongside for debugging purposes
 6. Go to the =ox-publish= configuration file - =build/build-site.el= and
    evaluate both code blocks inside of it
-7. Finally generate =.html= files from =.org= files by =M-x
-   my-org-publish-org-force=
+7. Finally generate =.html= files from =.org= files by =M-x my-org-publish-org-force=
 8. Check =html= folder once again, you will see 3 =html= files exported
 9. Now go back to =20240606T072955--file__emacs.org= file and add a Denote link
-   to =best file= by pressing =C-c n i=
+   to =best file= by pressing =C-c n i= key binding.
 10. Now inside of the =20240606T072955--file__emacs.org= we have two links to
     =20240606T073028--best-file__economics.org=. One regular Emacs link and one
     Denote link
